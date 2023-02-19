@@ -92,7 +92,7 @@ const plugins = [
       api_key: process.env.SENDGRID_API_KEY,
       from: process.env.SENDGRID_FROM,
       customer_password_reset_template: process.env.SENDGRID_CUSTOMER_PASSWORD_RESET_ID,
-      user_password_reset_template: process.env.SENDGRID_USER_PASSWORD_RESET_ID,
+      // user_password_reset_template: process.env.SENDGRID_USER_PASSWORD_RESET_ID,
     },
   },
   {
