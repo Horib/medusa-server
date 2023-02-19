@@ -104,6 +104,7 @@ const plugins = [
         secret_access_key: process.env.SPACE_SECRET_ACCESS_KEY,
     },
   },
+
   // {
   //   resolve: `medusa-file-s3`,
   //   options: {
@@ -114,6 +115,7 @@ const plugins = [
   //       secret_access_key: process.env.S3_SECRET_ACCESS_KEY,
   //   },
   // },
+  
     {
     resolve: `medusa-plugin-segment`,
     options: {
