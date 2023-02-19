@@ -114,6 +114,12 @@ const plugins = [
   //       secret_access_key: process.env.S3_SECRET_ACCESS_KEY,
   //   },
   // },
+    {
+    resolve: `medusa-plugin-segment`,
+    options: {
+      write_key: process.env.SEGMENT_WRITE_KEY,
+    },
+  },
 ];
 
 module.exports = {
