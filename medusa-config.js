@@ -95,7 +95,7 @@ module.exports = {
     // database_type: "sqlite",
     database_extra: { ssl: { rejectUnauthorized: false } },
     jwt_secret: "This is a secret",
-    cookie_secret: COOKIE_SECRET,
+    cookie_secret: "This is a secret",
     store_cors: STORE_CORS,
     admin_cors: ADMIN_CORS,
   },
