@@ -1,4 +1,4 @@
-// class AdminIviteSubscriber {
+class AdminIviteSubscriber {
 //   constructor({ sendgridService, eventBusService }) {
 //     this.sendGridService_ = sendgridService;
 
@@ -19,6 +19,6 @@
 //       },
 //     });
 //   };
-// }
+}
 
-// export default AdminIviteSubscriber;
+export default AdminIviteSubscriber;
