@@ -91,13 +91,7 @@ const plugins = [
     options: {
       api_key: process.env.SENDGRID_API_KEY,
       from: process.env.SENDGRID_FROM,
-      order_placed_template: process.env.SENDGRID_ORDER_PLACED_ID,
-      localization: {
-        "de-DE": { // locale key
-          order_placed_template:
-            process.env.SENDGRID_ORDER_PLACED_ID_LOCALIZED,
-        },
-      },
+      user_password_reset_template: process.env.SENDGRID_USER_PASSWORD_RESET_ID,
     },
   },
 ];
