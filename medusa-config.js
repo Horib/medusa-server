@@ -23,7 +23,7 @@ try {
 }
 
 // CORS when consuming Medusa from admin
-const ADMIN_CORS = process.env.ADMIN_CORS || "http://localhost:7000,http://localhost:7001";
+const ADMIN_CORS = process.env.ADMIN_CORS || "http://localhost:7000,http://localhost:7001,https://medusa-admin-ten.vercel.app/";
 
 // CORS to avoid issues when consuming Medusa from a client
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
@@ -94,8 +94,8 @@ module.exports = {
     // database_database: "./medusa-db.sql",
     // database_type: "sqlite",
     database_extra: { ssl: { rejectUnauthorized: false } },
-    jwt_secret: "This is a secret",
-    cookie_secret: "This is a secret",
+    jwt_secret: JWT_SECRET,
+    cookie_secret: COOKIE_SECRET,
     store_cors: STORE_CORS,
     admin_cors: ADMIN_CORS,
   },
