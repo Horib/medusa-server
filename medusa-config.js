@@ -45,6 +45,9 @@ const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 const STRIPE_API_KEY = process.env.STRIPE_API_KEY || "";
 const STRIPE_WEBHOOK_SECRET = process.env.STRIPE_WEBHOOK_SECRET || "";
 
+const JWT_SECRET = process.env.JWT_SECRET
+const COOKIE_SECRET = process.env.COOKIE_SECRET
+
 // This is the place to include plugins. See API documentation for a thorough guide on plugins.
 const plugins = [
   `medusa-fulfillment-manual`,
