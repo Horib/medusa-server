@@ -23,7 +23,7 @@ try {
 }
 
 // CORS when consuming Medusa from admin
-const ADMIN_CORS = process.env.ADMIN_CORS || "http://localhost:7000,http://localhost:7001,https://medusa-admin-ten.vercel.app/";
+const ADMIN_CORS = process.env.ADMIN_CORS || "http://localhost:7000,http://localhost:7001";
 
 // CORS to avoid issues when consuming Medusa from a client
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
@@ -82,6 +82,20 @@ const plugins = [
             "collection_handle",
             "images",
           ],
+        },
+      },
+    },
+  },
+  {
+    resolve: `medusa-plugin-sendgrid`,
+    options: {
+      api_key: process.env.SENDGRID_API_KEY,
+      from: process.env.SENDGRID_FROM,
+      order_placed_template: process.env.SENDGRID_ORDER_PLACED_ID,
+      localization: {
+        "de-DE": { // locale key
+          order_placed_template:
+            process.env.SENDGRID_ORDER_PLACED_ID_LOCALIZED,
         },
       },
     },
