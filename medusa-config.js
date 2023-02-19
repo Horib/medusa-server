@@ -94,6 +94,16 @@ const plugins = [
       user_password_reset_template: process.env.SENDGRID_USER_PASSWORD_RESET_ID,
     },
   },
+  {
+    resolve: `medusa-file-spaces`,
+    options: {
+        spaces_url: process.env.SPACE_URL,
+        bucket: process.env.SPACE_BUCKET,
+        endpoint: process.env.SPACE_ENDPOINT,
+        access_key_id: process.env.SPACE_ACCESS_KEY_ID,
+        secret_access_key: process.env.SPACE_SECRET_ACCESS_KEY,
+    },
+  },
 ];
 
 module.exports = {
