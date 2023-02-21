@@ -83,6 +83,7 @@ const plugins = [
             "images",
           ],
         },
+        filters: "status:published",
       },
     },
   },
